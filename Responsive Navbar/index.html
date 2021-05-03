@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>My Project</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-center">
+            <div class="nav-header">
+                <img src="logo.png" alt="logo" class="logo">
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        <main class="main">
+            <div class="main-subsection subsection-text">
+                <h1 class="subsection-text-header">Dostava svježeg <br> voća i povrća!</h1>
+                <p class="subsection-text-paragraph">Dostavljamo svježe voće i povrće vlastite <br>
+                    proizvodnje i proizvodnje provjerenih <br>
+                    proizvođača do vašeg doma u Zagrebu i okolici.</p>
+                <button class="order-btn" id="order-button">Naruči <i class="fas fa-cart-plus"></i></button>
+            </div>
+            <div class="main-subsection">
+                <img src="92.jpg" class="farm-img" alt="Farma">
+
+            </div>
+        </main>
+
+        <div class="div-one">
+            <div class="div-one-one div-one-onetwo">
+                <img class="div-one-one-img"
+                    src="https://uploads-ssl.webflow.com/5ec2165667cf48c5a5d15ac0/5fd34a293a85f9c3fd2ebe45_farmer.svg"
+                    alt="" class="image-79">
+            </div>
+            <div class="div-one-two div-one-onetwo">
+                <h1>Svježe <br> ubrano voće <br> i povrće</h1>
+                <p>Sa naših polja sa sela kraj Zagreba, <br> donosimo vam
+                    namirnice uzgajane <br> na 6 hektara zemlje.</p>
+            </div>
+        </div>
+        <div class="div-two">
+            <h1 class="div-two-one">Kvalitetno sa sela</h1>
+            <p class="div-two-two">Trudimo se dostaviti vam samo najbolje sa naših njiva</p>
+        </div>
+
+
+        <div class="grid">
+            <div class="grid-item grid-item-one">
+                <img class="imgimg" src="freshfood.jpg" alt="">
+                <div class="grid-item-one-subdiv">
+                    <h2 class="grid-item-one-header">Svježe</h2> <br>
+                    <p class="grid-item-one-paragraph">Uvijek svježe ubrano i pakirana neposredno prije dostave.
+                        Dostavljeno u kombijima sa rashladom.</p>
+                </div>
+            </div>
+
+            <div class="grid-item grid-item-two">
+                <img class="imgimg" src="freshfood1.jpg" alt="">
+                <div class="grid-item-two-subdiv">
+                    <h2 class="grid-item-two-header">Domaće</h2> <br>
+                    <p class="grid-item-two-paragraph">Vlastita proizvodnja na hrvatskim poljima. U najvećoj mogućoj
+                        mjeri korišteno sjeme uzgojeno kod naših baka i djedova.</p>
+                </div>
+            </div>
+
+            <div class="grid-item grid-item-three">
+                <img class="imgimg" src="https://uploads-ssl.webflow.com/5ec2165667cf48c5a5d15ac0/5fd34a3e8fc61d0b098c5356_kariola_Artboard%201.svg"
+                    alt="">
+                <div class="grid-item-three-subdiv">
+                    <h2 class="grid-item-three-header">Kvalitetno</h2> <br>
+                    <p class="grid-item-three-paragraph">Samo najbolje odabrano voće i povrće. Minimalno špricano i
+                        pakirano u pakirnici koja zadovoljava sve najveće europske standarde.</p>
+                </div>
+            </div>
+
+            <div class="grid-item grid-item-four">
+                <img class="imgimg" src="https://uploads-ssl.webflow.com/5ec2165667cf48c5a5d15ac0/5fd34a3e8fc61d4a488c5357_kosara-01.svg"
+                    alt="">
+                <div class="grid-item-four-subdiv">
+                    <h2 class="grid-item-four-header">Raznovrsno</h2> <br>
+                    <p class="grid-item-four-paragraph">Suradnja sa drugim proizvođačima, kako bi mogli zadovoljiti što
+                        veći broj klijenata. Pomno odabrani samo najbolji proizvodi naših partnera.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Cart-->
+    <section class="cart">
+        <div class="icons-items">
+        <button class="close-cart-btn">✖</button>
+        <h5 class="cart-header">Tvoja košarica</h5> <br> 
+        <div class="icons-ol">
+        <div class="icons">
+            <button class="icon-btn onion-btn" id="Luk"><img class="icon-img" src="onion.png" alt=""></button>
+            <button class="icon-btn carrot-btn" id="Mrkva"><img class="icon-img"  src="carrot.png" alt=""></button>
+            <button class="icon-btn tomato-btn" id="Rajčica"><img class="icon-img"  src="tomato.png" alt=""></button>
+            <button class="icon-btn strawberry-btn" id="Jagode"><img class="icon-img"  src="strawberry.png" alt=""></button>
+        </div>
+        <div class="ordered-list">
+            
+            
+        </div>
+
+    </div>
+        <div class="cart-info">
+        <label for="">Adresa dostave:</label>
+        <input class="cart-input" type="text">
+        <label for="">Kontakt broj:</label>
+        <input class="cart-input" type="text">
+    </div>
+    </div>
+        
+        <div class="total">
+            <div class="total-one">
+                <p class="total-one-one">Ukupno</p>
+                <p class="total-one-two"><input class="total-input" type="number" value="0" readonly> kn</p>
+            </div>
+            <button class="total-two"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-div">
+            <h2>OPG Spomat</h2> <br> <br>
+            <p>Adresa: Gruška ulica 14, Zagreb 10000</p> <br>
+            <p>Kontakt: 091-7505-923</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

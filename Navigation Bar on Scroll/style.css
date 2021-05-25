@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fbcf10;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    z-index: 2;
+    background-color: #33332d;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #33332d;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.nav-link:hover {
+    color: #0a56ee;
+}
+
+.nav-logo {
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+h1 {
+    padding-top: 1em;
+}
+
+.about {
+    height: 100vh;
+    text-align: center;
+    background-color: #5e0541;
+    color: #fa7500;
+}
+
+.services {
+    height: 100vh;
+    background-color: #5b4099;
+    color: #54deea;
+    text-align: center;
+}
+
+.tours {
+    height: 100vh;
+    text-align: center;
+    background-color: #55a475;
+    color: #fff3b6;
+}
+
+.top-button {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    bottom: 70px;
+    right: 80px;
+    font-size: 1.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid black;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fbcf10;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.0.5);
+    }
+
+    .nav-menu.active {
+        left: 0;
+        background-color: #fbcf10;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .nav-link:hover {
+        color: #0a56ee;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

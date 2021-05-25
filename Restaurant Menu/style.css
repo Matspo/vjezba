@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    background-color: hsl(210, 36%, 96%);
+    overflow-y: scroll;
+}
+
+.main-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+h2 {
+    letter-spacing: 1px;
+    padding: 1em 0;
+    margin: 1em 0;
+    border-bottom: 2px solid #e56020;
+}
+
+.menu-buttons {
+    padding: 1em 0;
+    margin-bottom: 3em;
+}
+
+.item {
+    width: 100%;
+    display: flex;
+}
+
+.item-info {
+    width: 100%;
+    padding: 0 1em;
+}
+
+.name-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0;
+    border-bottom: 1px dotted #63727a;
+}
+
+.food-title {
+    letter-spacing: 1px;
+}
+
+.food-price {
+    color: #e56020;
+}
+
+.food-description {
+    font-size: 0.8em;
+    padding: 0.5em 0;
+    color: #797979;
+}
+
+.btn {
+    padding: 0.5em 1em;
+    margin: 0 0.3em;
+    background-color: transparent;
+    border: 1px solid #e56020;
+    color: #e56020;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.food-img {
+    width: 499px;
+    height: 175px;
+    object-fit: cover;
+    border: 2px solid #e56020;
+    border-radius: 10px;
+}

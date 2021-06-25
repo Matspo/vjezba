@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styletest.css" />
+    <link rel="stylesheet" href="norm.css" />
+    <title>My Project - Test</title>
+  </head>
+  <body>
+    <div class="container">
+
+      
+      <!-- Aside Left -->
+
+      <aside class="aside-left">
+        <div class="header-img img-income">
+          <img src="income.svg" alt="Expense Logo" class="logo" />
+        </div>
+        <div class="income-container">
+          <button class="add-income-btn">
+            <i class="fas fa-plus"></i>Add Income</button>
+        </div>
+        <div class="income-input-container">
+          <input class="income-input" type="number">
+          <div class="input-buttons">
+            <button class="add-input-btn"><i class="fas fa-plus"></i></button>
+            <button class="close-input-btn"><i class="fas fa-times"></i></button>
+          </div>
+        </div>
+        
+      </aside>
+
+      <!-- Main -->
+
+      <main class="main">
+        <div class="header-img img-outcome">
+          <img src="outcome.svg" alt="Expense" class="logo" />
+        </div>
+        <button class="add-new-expense-btn">
+          <i class="fas fa-plus"></i>Add Expense
+        </button>
+
+        <div class="expenses-container">
+          <!-- Expense Form -->
+          <form class="expense-form">
+            <label for="exp-name">Expense:</label>
+            <input
+              type="text"
+              id="exp-name"
+              name="exp-name"
+              autocomplete="off"
+            />
+            <label for="exp-money">Value:</label>
+            <input
+              type="number"
+              id="exp-money"
+              name="exp-money"
+              autocomplete="off"
+            />
+            <label for="exp-category">Choose a category:</label>
+            <div class="form-icons">
+              <button class="form-icon-btn"><i class="fas fa-utensils"></i></button>
+              <button class="form-icon-btn"><i class="fas fa-file-invoice-dollar"></i></button>
+              <button class="form-icon-btn"><i class="fas fa-suitcase-rolling"></i></button>
+              <button class="form-icon-btn"><i class="fas fa-heart"></i></button>
+            </div>
+            <div class="expense-form-btns">
+              <button class="save-expense-btn">
+                <i class="fas fa-file-export"></i>
+              </button>
+              <button class="close-expense-btn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <!-- Aside Right -->
+
+      <aside class="aside-right">
+        <div class="header-img img-wallet">
+          <img src="wallet.svg" alt="Wallet" class="logo" />
+        </div>
+        <div class="prihodi-rashodi">
+          <div class="prihodi">
+            <label for="prihodi">INCOME</label>
+            <input type="text" id="prihodi" value="0" readonly />
+          </div>
+          <div class="rashodi">
+            <label for="rashodi">EXPENSES</label>
+            <input type="text" id="rashodi" value="0" readonly />
+          </div>
+        </div>
+        <div class="categories-section">
+          <div class="categories">
+            <div class="category">
+              <button class="category-btn">
+                <i class="fas fa-utensils"></i>
+                <p>Food & Shopping</p>
+              </button>
+              <div class="category-bars">
+                <div class="bar first-bar"></div>
+                <input class="progress-value pv-1" type="text" value="25" readonly>
+              </div>
+            </div>
+            <div class="category">
+              <button class="category-btn">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <p>Bills</p>
+              </button>
+              <div class="category-bars">
+                <div class="bar second-bar"></div>
+                <input class="progress-value pv-2" type="text" value="100" readonly>
+              </div>
+            </div>
+            <div class="category">
+              <button class="category-btn">
+                <i class="fas fa-suitcase-rolling"></i>
+                <p>Travel</p>
+              </button>
+              <div class="category-bars">
+                <div class="bar third-bar"></div>
+                <input class="progress-value pv-3" type="text" value="0" readonly>
+              </div>
+            </div>
+            <div class="category">
+              <button class="category-btn">
+                <i class="fas fa-heart"></i>
+                <p>Health & Fitness</p>
+              </button>
+              <div class="category-bars">
+                <div class="bar fourth-bar"></div>
+                <input class="progress-value pv-4" type="text" value="0" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Footer Mobile-->
+    <footer class="footer">
+      <button class="income-btn mobile-nav-btn">
+        <i class="fas fa-ellipsis-h"></i>
+      </button>
+      <button class="expenses-btn mobile-nav-btn">
+        <i class="fas fa-file-invoice-dollar"></i>
+      </button>
+      <button class="wallet-btn mobile-nav-btn">
+        <i class="fas fa-wallet"></i>
+      </button>
+    </footer>
+
+    <!-- <canvas class="background"></canvas>
+    <script src="particles.js-master\src\particles.js"></script> -->
+    <script src="scripttest.js"></script>
+  </body>
+</html>

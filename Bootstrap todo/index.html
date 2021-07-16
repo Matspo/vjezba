@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="site.css" />
+    <title>Todo app1</title>
+  </head>
+  <body class="h-75">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Todo app</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Todo list</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid h-100">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-md-6">
+          <h2>Moja todo lista</h2>
+
+          <form class="row g-3" id="newTodoForm">
+            <div class="col-4">
+              <select class="form-select" aria-label="Kategorija" id="newTodoCategory" required>
+                <option value="personal" selected>Osobno</option>
+                <option value="business">Poslovno</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="newTodoInput" class="visually-hidden">Novi todo item</label>
+              <input type="text" class="form-control" id="newTodoInput" placeholder="Novi todo item" required>
+            </div>
+            <div class="col-2 d-grid gap-2">
+              <button type="submit" class="btn btn-block btn-primary mb-3">Dodaj</button>
+            </div>
+          </form>
+          
+          <ul class="list-group" id="todosContainer">
+          </ul>          
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editModalTitle">Uređivanje todo itema: </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <form class="row g-3" id="editTodoForm">
+                <div class="col-4">
+                  <select class="form-select" aria-label="Kategorija" id="editTodoCategory" required>
+                    <option value="personal" selected>Osobno</option>
+                    <option value="business">Poslovno</option>
+                  </select>
+                </div>
+                <div class="col-8">
+                  <label for="editTodoInput" class="visually-hidden">Uredi todo item</label>
+                  <input type="text" class="form-control" id="editTodoInput" placeholder="Uredite todo item" required>
+                  <input type="hidden" class="form-control" id="editTodoIndex" value="">
+                </div>
+              </form>  
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Odustani</button>
+            <button type="submit" class="btn btn-primary" form="editTodoForm">Spremi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

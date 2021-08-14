@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>IP Address Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+<body>
+  <div id="main-container" class="container position-relative d-flex flex-column justify-content-start align-items-center text-center rounded-2" style="background-image: url(./images/pattern-bg.png);">
+    <h1 class="text-light my-3">IP Address Tracker</h1>
+    <div class="input-group input-group-lg my-5">
+      <input type="text" id="input" class="form-control rounded-3" placeholder="Search for any IP address or domain" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button class="btn btn-dark" type="button" id="button-addon2"><i class="bi bi-arrow-right"></i></button>
+    </div>
+      <div class="row w-75 px-2 py-3 bg-light rounded-3 shadow-lg d-flex justify-content-center align-items-center position-absolute top-100 start-50 translate-middle m-0">
+        <div class="col-lg-3 d-flex flex-column justify-content-center text-center border-end">
+          <h6 class="fs-6 text-muted">IP ADDRESS</h6>
+          <h5 id="ip_header" class="fw-bold"></h5>
+        </div>
+        <div class="col-lg-3 d-flex flex-column justify-content-center text-center border-end">
+          <h6 class="fs-6 text-muted">LOCATION</h6>
+          <h5 id="location_header" class="fw-bold"></h5>
+        </div>
+        <div class="col-lg-3 d-flex flex-column justify-content-center text-center border-end">
+          <h6 class="fs-6 text-muted">TIMEZONE</h6>
+          <h5 id="timezone_header" class="fw-bold"></h5>
+        </div>
+        <div class="col-lg-3 d-flex flex-column justify-content-center text-center">
+          <h6 class="fs-6 text-muted">ISP</h6>
+          <h5 id="isp_header" class="fw-bold"></h5>
+        </div>
+      </div>
+  </div>
+  <div id="mapid" class="container"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
